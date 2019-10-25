@@ -1,0 +1,17 @@
+<h1><%= @pizza.name %> information </h1>
+
+<h2> Name</h2>
+<li><%= @pizza.name%><li>
+
+<h2>ingredients</h2>
+<li><%= @pizza.ingredients%><li>
+
+
+
+
+<%= button_to "submit", pizzas_path, method: :get, class => 'button'%>
+<%form_for @pizza, method: :delete do |f|%>
+<%= f.submit "Delete Pizza"%>
+<%end%>
+
+
