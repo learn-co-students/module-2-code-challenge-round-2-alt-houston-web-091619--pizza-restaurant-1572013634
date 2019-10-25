@@ -1,0 +1,11 @@
+<%= tag.h2 @restaurant.name %>
+
+<%= tag.br %>
+
+<%= tag.h2 @restaurant.address %>
+
+
+<% @restaurant.pizzas.each do |p| %>
+    <ul><%= link_to p.name, p %></ul>
+<% end %>
+
