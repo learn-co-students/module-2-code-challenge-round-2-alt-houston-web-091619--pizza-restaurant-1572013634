@@ -21,3 +21,7 @@ Restaurant.create!([{
   name: "San Matteo NYC",
   address: "1559 2nd Ave, New York, NY 10028"
 }])
+
+p1 = Pizza.create(name: "Veggie", ingredients: "Veggies", restaurant_id: Restaurant.first.id)
+p2 = Pizza.create(name: "Spicy",  ingredients: "Veggies with Jalepenos", restaurant_id: Restaurant.second.id)
+p3 = Pizza.create(name: "Cheese",  ingredients: "Cheese", restaurant_id: Restaurant.third.id)
