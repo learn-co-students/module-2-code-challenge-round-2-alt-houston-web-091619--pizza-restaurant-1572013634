@@ -8,8 +8,9 @@
 #
 #   1
 Restaurant.destroy_all
+Pizza.destroy_all
  
-Restaurant.create!([{
+ Restaurant.create!([{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
 },
@@ -21,3 +22,23 @@ Restaurant.create!([{
   name: "San Matteo NYC",
   address: "1559 2nd Ave, New York, NY 10028"
 }])
+
+
+Pizza.create!([{
+  name: "yo momma",
+  ingredients: "pepper",
+  restaurant_id: Restaurant.all.first.id
+},
+{
+  name: "yo daddy",
+  ingredients: "food",
+  restaurant_id: Restaurant.all.second.id
+},
+{
+  name: "yo sister",
+  ingredients: "make me food",
+  restaurant_id: Restaurant.all.third.id
+}])
+
+
+
